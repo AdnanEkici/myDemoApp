@@ -90,13 +90,13 @@ public class App
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
     static String yanit(ArrayList<Integer> arr, int a){
-    //ekledim
+    
       if (arr == null || arr.size() == 0) return "hata girdi yok";
       String don = "";
       for (int elt : arr) {
-      if (elt == 0 && a == 0) don += "bulamadi";//ekledim
-      else if (elt != 0 && a == 0) don += "1, "; //ekledim
-      else {//senin kodu else içine aldım
+      if (elt == 0 && a == 0) don += "bulamadi";
+      else if (elt != 0 && a == 0) don += "1, ";
+      else {
         int sonuc = 1;
         for(int i = 0 ; i < a ; i++ ){
           sonuc += elt;
